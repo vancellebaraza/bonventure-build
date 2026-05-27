@@ -4,6 +4,9 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Premium typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+
 /*
  * Design system definition.
  *
@@ -59,29 +62,41 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Manrope', ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --radius: 0.5rem;
+  /* Brand: teal accent + charcoal */
+  --background: oklch(0.99 0.003 220);
+  --foreground: oklch(0.22 0.015 240);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
+  --card-foreground: oklch(0.22 0.015 240);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
+  --popover-foreground: oklch(0.22 0.015 240);
+  --primary: oklch(0.68 0.085 200);         /* teal from logo */
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.96 0.005 220);
+  --secondary-foreground: oklch(0.22 0.015 240);
+  --muted: oklch(0.96 0.005 220);
+  --muted-foreground: oklch(0.5 0.015 240);
+  --accent: oklch(0.68 0.085 200);
+  --accent-foreground: oklch(0.99 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
+  --border: oklch(0.92 0.008 220);
+  --input: oklch(0.92 0.008 220);
+  --ring: oklch(0.68 0.085 200);
+  --charcoal: oklch(0.28 0.015 240);
+  --charcoal-foreground: oklch(0.98 0 0);
+  --teal: oklch(0.68 0.085 200);
+  --teal-deep: oklch(0.55 0.09 200);
+  --gradient-hero: linear-gradient(135deg, oklch(0.28 0.015 240) 0%, oklch(0.35 0.04 220) 100%);
+  --gradient-accent: linear-gradient(135deg, oklch(0.68 0.085 200), oklch(0.55 0.09 200));
+  --shadow-soft: 0 1px 2px rgb(0 0 0 / 0.04), 0 8px 24px -8px rgb(0 0 0 / 0.08);
+  --shadow-card: 0 1px 3px rgb(0 0 0 / 0.05), 0 12px 32px -12px color-mix(in oklab, var(--teal) 25%, transparent);
+  --transition-smooth: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -140,5 +155,49 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
   }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+#lovable-badge,
+[id="lovable-badge"] {
+  display: none !important;
+}
+
+/* Shimmer skeleton */
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+.shimmer {
+  background: linear-gradient(90deg,
+    oklch(0.94 0.005 220) 0%,
+    oklch(0.97 0.005 220) 50%,
+    oklch(0.94 0.005 220) 100%);
+  background-size: 1000px 100%;
+  animation: shimmer 2s linear infinite;
+}
+
+/* Subtle floating bg blobs */
+@keyframes float-slow {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(20px, -30px); }
+}
+.bg-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  opacity: 0.35;
+  pointer-events: none;
+  animation: float-slow 14s ease-in-out infinite;
 }
