@@ -248,25 +248,25 @@ export function WhatsAppModal({ open, onClose }: { open: boolean; onClose: () =>
         <form onSubmit={onSubmit} className="px-6 py-5 grid sm:grid-cols-2 gap-4 max-h-[75vh] overflow-y-auto">
           <label className="block">
             <span className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground font-semibold">Full name</span>
-            <input required maxLength={100} value={form.name} onChange={update("name")} className="bwb-mod-input" placeholder="Your name" />
+            <input aria-label="Full name" required maxLength={100} value={form.name} onChange={update("name")} className="bwb-mod-input" placeholder="Your name" />
           </label>
           <label className="block">
             <span className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground font-semibold">Phone</span>
-            <input required maxLength={20} type="tel" value={form.phone} onChange={update("phone")} className="bwb-mod-input" placeholder="07XX XXX XXX" />
+            <input aria-label="Phone number" required maxLength={20} type="tel" value={form.phone} onChange={update("phone")} className="bwb-mod-input" placeholder="07XX XXX XXX" />
           </label>
           <label className="block">
             <span className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground font-semibold">Service</span>
-            <select required value={form.service} onChange={update("service")} className="bwb-mod-input">
+            <select aria-label="Service" required value={form.service} onChange={update("service")} className="bwb-mod-input">
               {SERVICES.map((s) => <option key={s}>{s}</option>)}
             </select>
           </label>
           <label className="block">
             <span className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground font-semibold">Location</span>
-            <input required maxLength={120} value={form.location} onChange={update("location")} className="bwb-mod-input" placeholder="Town / county" />
+            <input aria-label="Location" required maxLength={120} value={form.location} onChange={update("location")} className="bwb-mod-input" placeholder="Town / county" />
           </label>
           <label className="block sm:col-span-2">
             <span className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground font-semibold">Message</span>
-            <textarea required maxLength={1500} rows={4} value={form.message} onChange={update("message")} className="bwb-mod-input resize-none" placeholder="Tell us about your project..." />
+            <textarea aria-label="Message" required maxLength={1500} rows={4} value={form.message} onChange={update("message")} className="bwb-mod-input resize-none" placeholder="Tell us about your project..." />
           </label>
           <button type="submit" className="sm:col-span-2 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-md bg-[#25D366] hover:bg-[#1ebe5b] text-white font-semibold transition-colors">
             <WhatsAppIcon className="h-5 w-5" /> Open WhatsApp

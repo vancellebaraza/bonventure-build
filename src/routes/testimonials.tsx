@@ -55,6 +55,7 @@ function Testimonials() {
       <PageHeader eyebrow="Testimonials" title="Trusted by clients across Kenya." subtitle="Real feedback from homeowners, developers and businesses we have served." />
 
       <section className="mx-auto max-w-7xl px-5 sm:px-8 py-16">
+        <h2 className="sr-only">By the numbers</h2>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
           {[
             { n: 120, s: "+", l: "Projects Completed" },
@@ -73,6 +74,7 @@ function Testimonials() {
       </section>
 
       <section className="mx-auto max-w-7xl px-5 sm:px-8 pb-24">
+        <h2 className="sr-only">Client reviews</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {REVIEWS.map((r, i) => (
             <FadeIn key={r.name} delay={(i % 3) * 80}>
