@@ -103,9 +103,9 @@ function Home() {
           </div>
           <div>
             <div className="text-xs uppercase tracking-[0.25em] text-[var(--teal-deep)] font-semibold">Lead Engineer</div>
-            <h2 className="mt-1 font-display text-2xl sm:text-3xl font-bold">Bonventure Otieno</h2>
+            <h2 className="mt-1 font-display text-2xl sm:text-3xl font-bold">Bonventure</h2>
             <p className="mt-3 text-muted-foreground max-w-3xl">
-              Bonventure Otieno is a qualified civil and structural engineer based in Kenya, founder of Build With Bonventure. With years of hands-on field experience, he leads every project personally — combining sound engineering, transparent quotations and reliable site delivery for homes, commercial buildings and infrastructure across the country.
+              Bonventure is a qualified civil and structural engineer based in Kenya, founder of Build With Bonventure. With years of hands-on field experience, he leads every project personally — combining sound engineering, transparent quotations and reliable site delivery for homes, commercial buildings and infrastructure across the country.
             </p>
           </div>
         </div>
