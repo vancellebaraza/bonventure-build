@@ -135,14 +135,14 @@ function Footer() {
               <div className="text-xs uppercase tracking-[0.2em] text-[var(--teal)]">Engineering Trust</div>
             </div>
           </div>
-          <p className="mt-4 text-sm text-white/70 max-w-md">
+          <p className="mt-4 text-sm text-white/80 max-w-md">
             Professional civil & structural engineering, construction, and maintenance services delivered with precision across Kenya.
           </p>
         </div>
 
         <div>
-          <h4 className="text-sm font-semibold mb-3">Quick Links</h4>
-          <ul className="space-y-2 text-sm text-white/70">
+          <h3 className="text-sm font-semibold mb-3">Quick Links</h3>
+          <ul className="space-y-2 text-sm text-white/80">
             {NAV.map((n) => (
               <li key={n.to}>
                 <Link to={n.to} className="hover:text-[var(--teal)] transition-colors">{n.label}</Link>
@@ -152,8 +152,8 @@ function Footer() {
         </div>
 
         <div>
-          <h4 className="text-sm font-semibold mb-3">Contact</h4>
-          <ul className="space-y-2 text-sm text-white/70">
+          <h3 className="text-sm font-semibold mb-3">Contact</h3>
+          <ul className="space-y-2 text-sm text-white/80">
             <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-[var(--teal)]" /> 0758 477 375</li>
             <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-[var(--teal)]" /> {EMAIL}</li>
             <li className="flex items-center gap-2"><Instagram className="h-4 w-4 text-[var(--teal)]" />
@@ -169,7 +169,7 @@ function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10">
-        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-5 text-xs text-white/50 flex flex-col sm:flex-row gap-2 justify-between">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-5 text-xs text-white/75 flex flex-col sm:flex-row gap-2 justify-between">
           <span>© {new Date().getFullYear()} Build With Bonventure. All rights reserved.</span>
           <span>Civil & Structural Engineering • Kenya</span>
         </div>
@@ -248,25 +248,25 @@ export function WhatsAppModal({ open, onClose }: { open: boolean; onClose: () =>
         <form onSubmit={onSubmit} className="px-6 py-5 grid sm:grid-cols-2 gap-4 max-h-[75vh] overflow-y-auto">
           <label className="block">
             <span className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground font-semibold">Full name</span>
-            <input required maxLength={100} value={form.name} onChange={update("name")} className="bwb-mod-input" placeholder="Your name" />
+            <input aria-label="Full name" required maxLength={100} value={form.name} onChange={update("name")} className="bwb-mod-input" placeholder="Your name" />
           </label>
           <label className="block">
             <span className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground font-semibold">Phone</span>
-            <input required maxLength={20} type="tel" value={form.phone} onChange={update("phone")} className="bwb-mod-input" placeholder="07XX XXX XXX" />
+            <input aria-label="Phone number" required maxLength={20} type="tel" value={form.phone} onChange={update("phone")} className="bwb-mod-input" placeholder="07XX XXX XXX" />
           </label>
           <label className="block">
             <span className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground font-semibold">Service</span>
-            <select required value={form.service} onChange={update("service")} className="bwb-mod-input">
+            <select aria-label="Service" required value={form.service} onChange={update("service")} className="bwb-mod-input">
               {SERVICES.map((s) => <option key={s}>{s}</option>)}
             </select>
           </label>
           <label className="block">
             <span className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground font-semibold">Location</span>
-            <input required maxLength={120} value={form.location} onChange={update("location")} className="bwb-mod-input" placeholder="Town / county" />
+            <input aria-label="Location" required maxLength={120} value={form.location} onChange={update("location")} className="bwb-mod-input" placeholder="Town / county" />
           </label>
           <label className="block sm:col-span-2">
             <span className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground font-semibold">Message</span>
-            <textarea required maxLength={1500} rows={4} value={form.message} onChange={update("message")} className="bwb-mod-input resize-none" placeholder="Tell us about your project..." />
+            <textarea aria-label="Message" required maxLength={1500} rows={4} value={form.message} onChange={update("message")} className="bwb-mod-input resize-none" placeholder="Tell us about your project..." />
           </label>
           <button type="submit" className="sm:col-span-2 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-md bg-[#25D366] hover:bg-[#1ebe5b] text-white font-semibold transition-colors">
             <WhatsAppIcon className="h-5 w-5" /> Open WhatsApp

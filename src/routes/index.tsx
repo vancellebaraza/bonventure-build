@@ -9,8 +9,8 @@ import { ArrowRight, Building2, HardHat, Wrench, Zap, Shield, Ruler, Star, Check
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Build With Bonventure — Civil & Structural Engineering in Kenya" },
-      { name: "description", content: "Trusted civil and structural engineering, construction services, and maintenance across Kenya. Affordable building contractors delivering precision and professionalism." },
+      { title: "Build With Bonventure — Engineering in Kenya" },
+      { name: "description", content: "Trusted civil & structural engineering, construction and maintenance across Kenya. Affordable building contractors delivering precision and professionalism." },
       { name: "keywords", content: "civil engineer Kenya, structural engineer Kenya, construction services Kenya, building contractor Kenya, affordable construction Kenya" },
       { property: "og:title", content: "Build With Bonventure — Engineering Trust" },
       { property: "og:description", content: "Professional civil & structural engineering services in Kenya." },

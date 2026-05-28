@@ -100,22 +100,22 @@ function Contact() {
 
             <div className="mt-6 grid sm:grid-cols-2 gap-4">
               <Field label="Full name">
-                <input required maxLength={100} value={form.name} onChange={update("name")} className="bwb-input" placeholder="Your name" />
+                <input aria-label="Full name" required maxLength={100} value={form.name} onChange={update("name")} className="bwb-input" placeholder="Your name" />
               </Field>
               <Field label="Phone number">
-                <input required maxLength={20} type="tel" value={form.phone} onChange={update("phone")} className="bwb-input" placeholder="07XX XXX XXX" />
+                <input aria-label="Phone number" required maxLength={20} type="tel" value={form.phone} onChange={update("phone")} className="bwb-input" placeholder="07XX XXX XXX" />
               </Field>
               <Field label="Service needed">
-                <select required value={form.service} onChange={update("service")} className="bwb-input">
+                <select aria-label="Service needed" required value={form.service} onChange={update("service")} className="bwb-input">
                   {SERVICES.map((s) => <option key={s}>{s}</option>)}
                 </select>
               </Field>
               <Field label="Location">
-                <input required maxLength={120} value={form.location} onChange={update("location")} className="bwb-input" placeholder="Town / county" />
+                <input aria-label="Location" required maxLength={120} value={form.location} onChange={update("location")} className="bwb-input" placeholder="Town / county" />
               </Field>
               <div className="sm:col-span-2">
                 <Field label="Message">
-                  <textarea required maxLength={1500} rows={5} value={form.message} onChange={update("message")} className="bwb-input resize-none" placeholder="Tell us about your project..." />
+                  <textarea aria-label="Message" required maxLength={1500} rows={5} value={form.message} onChange={update("message")} className="bwb-input resize-none" placeholder="Tell us about your project..." />
                 </Field>
               </div>
             </div>

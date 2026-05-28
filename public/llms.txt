@@ -1,0 +1,14 @@
+# Build With Bonventure
+
+> Professional civil & structural engineering, construction, and maintenance services across Kenya. Tagline: Engineering Trust.
+
+Build With Bonventure is a Kenya-based engineering and construction company led by Bonventure, a qualified civil & structural engineer. Services include structural design, building works, electrical and plumbing, interior design, landscaping, CCTV and electric fence installation, architectural and structural drawings, tank cleaning, and repairs.
+
+## Pages
+
+- [Home](/): Overview of services, featured projects, and lead engineer Bonventure.
+- [About](/about): Mission, values, and the engineer behind the brand.
+- [Services](/services): Full list of civil, structural, building, security and maintenance services.
+- [Projects](/projects): Selected portfolio of completed civil, structural and construction work.
+- [Testimonials](/testimonials): Client reviews from homeowners, developers and businesses.
+- [Contact](/contact): Phone, WhatsApp, email and quote request form.
