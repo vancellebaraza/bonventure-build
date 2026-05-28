@@ -159,7 +159,12 @@ function Footer() {
             <li className="flex items-center gap-2"><Instagram className="h-4 w-4 text-[var(--teal)]" />
               <a href={INSTAGRAM} target="_blank" rel="noreferrer" className="hover:text-[var(--teal)]">@build_with_bonventure</a>
             </li>
-            <li className="flex items-center gap-2 opacity-60"><span className="h-4 w-4 grid place-items-center text-[10px] font-bold">in</span> LinkedIn — coming soon</li>
+            <li className="flex items-center gap-2"><TikTokIcon className="h-4 w-4 text-[var(--teal)]" />
+              <a href={TIKTOK} target="_blank" rel="noreferrer" className="hover:text-[var(--teal)]">@build_with_bonventure</a>
+            </li>
+            <li className="flex items-center gap-2"><WhatsAppIcon className="h-4 w-4 text-[var(--teal)]" />
+              <a href={`https://wa.me/${WHATSAPP_NUMBER}`} target="_blank" rel="noreferrer" className="hover:text-[var(--teal)]">+254 758 477 375</a>
+            </li>
           </ul>
         </div>
       </div>
