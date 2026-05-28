@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://bonventure-build-trust.lovable.app/sitemap.xml
