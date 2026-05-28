@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import logo from "@/assets/logo.jpg";
 import { Menu, X, Phone, Mail, Instagram } from "lucide-react";
@@ -278,10 +278,11 @@ export function WhatsAppModal({ open, onClose }: { open: boolean; onClose: () =>
 
 export function SiteLayout({ children }: { children: React.ReactNode }) {
   const [waOpen, setWaOpen] = useState(false);
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar onOpenWhatsApp={() => setWaOpen(true)} />
-      <main key={typeof window !== "undefined" ? window.location.pathname : "ssr"} className="flex-1 page-transition">
+      <main key={pathname} className="flex-1 page-transition">
         {children}
       </main>
       <Footer />
