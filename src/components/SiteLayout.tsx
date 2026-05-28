@@ -135,14 +135,14 @@ function Footer() {
               <div className="text-xs uppercase tracking-[0.2em] text-[var(--teal)]">Engineering Trust</div>
             </div>
           </div>
-          <p className="mt-4 text-sm text-white/70 max-w-md">
+          <p className="mt-4 text-sm text-white/80 max-w-md">
             Professional civil & structural engineering, construction, and maintenance services delivered with precision across Kenya.
           </p>
         </div>
 
         <div>
-          <h4 className="text-sm font-semibold mb-3">Quick Links</h4>
-          <ul className="space-y-2 text-sm text-white/70">
+          <h3 className="text-sm font-semibold mb-3">Quick Links</h3>
+          <ul className="space-y-2 text-sm text-white/80">
             {NAV.map((n) => (
               <li key={n.to}>
                 <Link to={n.to} className="hover:text-[var(--teal)] transition-colors">{n.label}</Link>
@@ -152,8 +152,8 @@ function Footer() {
         </div>
 
         <div>
-          <h4 className="text-sm font-semibold mb-3">Contact</h4>
-          <ul className="space-y-2 text-sm text-white/70">
+          <h3 className="text-sm font-semibold mb-3">Contact</h3>
+          <ul className="space-y-2 text-sm text-white/80">
             <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-[var(--teal)]" /> 0758 477 375</li>
             <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-[var(--teal)]" /> {EMAIL}</li>
             <li className="flex items-center gap-2"><Instagram className="h-4 w-4 text-[var(--teal)]" />
@@ -169,7 +169,7 @@ function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10">
-        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-5 text-xs text-white/50 flex flex-col sm:flex-row gap-2 justify-between">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-5 text-xs text-white/75 flex flex-col sm:flex-row gap-2 justify-between">
           <span>© {new Date().getFullYear()} Build With Bonventure. All rights reserved.</span>
           <span>Civil & Structural Engineering • Kenya</span>
         </div>
