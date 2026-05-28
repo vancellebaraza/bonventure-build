@@ -78,6 +78,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Build With Bonventure" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Build With Bonventure — Engineering Trust" },
+      { name: "twitter:title", content: "Build With Bonventure — Engineering Trust" },
+      { property: "og:description", content: "Professional civil & structural engineering, construction, and maintenance services in Kenya." },
+      { name: "twitter:description", content: "Professional civil & structural engineering, construction, and maintenance services in Kenya." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/caac5a00-f888-47b0-822e-58968a39ce5e/id-preview-43570f7c--ef551642-d582-44b9-93f3-ecf6165e167d.lovable.app-1779954331546.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/caac5a00-f888-47b0-822e-58968a39ce5e/id-preview-43570f7c--ef551642-d582-44b9-93f3-ecf6165e167d.lovable.app-1779954331546.png" },
     ],
     links: [
       {
