@@ -56,12 +56,7 @@ function Home() {
         <div className="absolute inset-0 bg-gradient-to-br from-[var(--charcoal)]/95 via-[var(--charcoal)]/70 to-transparent" />
         <span className="bg-blob bg-[var(--teal)] h-96 w-96 -top-20 -right-20" />
         <div className="relative mx-auto max-w-7xl px-5 sm:px-8 pt-24 pb-28 sm:pt-32 sm:pb-36">
-          <FadeIn>
-            <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 backdrop-blur px-4 py-1.5 text-xs uppercase tracking-[0.22em] font-semibold text-[var(--teal)]">
-              <span className="h-1.5 w-1.5 rounded-full bg-[var(--teal)]" /> Engineering Trust
-            </div>
-          </FadeIn>
-          <FadeIn delay={120}>
+          <FadeIn delay={60}>
             <h1 className="mt-6 font-display text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight max-w-4xl leading-[1.05]">
               Professional Civil & Structural <span className="text-[var(--teal)]">Engineering Services</span> in Kenya
             </h1>
@@ -97,6 +92,22 @@ function Home() {
               ))}
             </div>
           </FadeIn>
+        </div>
+      </section>
+
+      {/* About the engineer (for SEO indexing) */}
+      <section className="mx-auto max-w-7xl px-5 sm:px-8 pt-16 sm:pt-20">
+        <div className="rounded-2xl border border-border bg-card p-6 sm:p-10 grid md:grid-cols-[auto,1fr] gap-6 items-center">
+          <div className="h-20 w-20 sm:h-24 sm:w-24 rounded-full bg-[var(--teal)]/10 grid place-items-center text-[var(--teal-deep)] font-display font-bold text-2xl">
+            BO
+          </div>
+          <div>
+            <div className="text-xs uppercase tracking-[0.25em] text-[var(--teal-deep)] font-semibold">Lead Engineer</div>
+            <h2 className="mt-1 font-display text-2xl sm:text-3xl font-bold">Bonventure Otieno</h2>
+            <p className="mt-3 text-muted-foreground max-w-3xl">
+              Bonventure Otieno is a qualified civil and structural engineer based in Kenya, founder of Build With Bonventure. With years of hands-on field experience, he leads every project personally — combining sound engineering, transparent quotations and reliable site delivery for homes, commercial buildings and infrastructure across the country.
+            </p>
+          </div>
         </div>
       </section>
 
