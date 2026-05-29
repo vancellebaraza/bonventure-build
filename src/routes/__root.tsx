@@ -74,7 +74,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Build With Bonventure — Engineering Trust" },
       { name: "description", content: "Professional civil & structural engineering, construction, and maintenance services in Kenya." },
-      { name: "google-site-verification", content: "googlea42f20320aa784e4.html" },
       { name: "author", content: "Build With Bonventure" },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Build With Bonventure" },
